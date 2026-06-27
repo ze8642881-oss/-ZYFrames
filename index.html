@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Portfolio 2024</title>
+  <meta name="description" content="Showcasing digital art, code, and design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanline-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="brand">
+        <span class="pf-brand-name">ZYFrames</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li class="nav-sep" aria-hidden="true">|</li>
+        <li><a href="#thumbnails" class="nav-link" data-section="thumbnails">Thumbnails</a></li>
+        <li class="nav-sep" aria-hidden="true">|</li>
+        <li><a href="#feedbacks" class="nav-link" data-section="feedbacks">Feedbacks</a></li>
+        <li class="nav-sep" aria-hidden="true">|</li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1 class="hero-title glitch-in" data-text="CREATIVE&#10;PORTFOLIO 2024">
+        <span>CREATIVE</span>
+        <span>PORTFOLIO 2024</span>
+      </h1>
+      <p class="hero-tagline">Showcasing digital art, code, and design.</p>
+      <a href="#thumbnails" class="btn-cta">
+        <span>VIEW WORK</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== THUMBNAILS ===================== -->
+  <section class="section thumbnails-section" id="thumbnails">
+    <div class="section-header reveal-item">
+      <h2 class="section-title">Thumbnails</h2>
+    </div>
+    <div class="thumbnails-grid">
+
+      <!-- Card 1 -->
+      <div class="thumb-card reveal-item" style="--delay:0.05s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-1.jpg" alt="Project 1" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Alpha</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="thumb-card reveal-item" style="--delay:0.1s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-2.jpg" alt="Project 2" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Beta</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 3 — highlighted -->
+      <div class="thumb-card thumb-card--active reveal-item" style="--delay:0.15s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-3.jpg" alt="Project 3" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay thumb-overlay--visible">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project 2024</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="thumb-card reveal-item" style="--delay:0.2s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-4.jpg" alt="Project 4" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Delta</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 5 — highlighted -->
+      <div class="thumb-card thumb-card--active reveal-item" style="--delay:0.05s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-5.jpg" alt="Project 5" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay thumb-overlay--visible">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Sunakale</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="thumb-card reveal-item" style="--delay:0.1s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-6.jpg" alt="Project 6" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Folio</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 7 — highlighted -->
+      <div class="thumb-card thumb-card--active reveal-item" style="--delay:0.15s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-7.jpg" alt="Project 7" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay thumb-overlay--visible">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Design</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project A06</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="thumb-card reveal-item" style="--delay:0.2s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-8.jpg" alt="Project 8" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Studio</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 9 — highlighted -->
+      <div class="thumb-card thumb-card--active reveal-item" style="--delay:0.05s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-9.jpg" alt="Project 9" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay thumb-overlay--visible">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Develop</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project API</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="thumb-card reveal-item" style="--delay:0.1s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-10.jpg" alt="Project 10" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Web</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="thumb-card reveal-item" style="--delay:0.15s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-11.jpg" alt="Project 11" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Motion</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="thumb-card reveal-item" style="--delay:0.2s">
+        <div class="thumb-img-wrap">
+          <img src="images/project-12.jpg" alt="Project 12" class="thumb-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="thumb-placeholder" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        </div>
+        <div class="thumb-overlay">
+          <div class="thumb-info">
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Details</p>
+            <p class="thumb-detail"><span class="bullet">▸</span> Project Sound</p>
+          </div>
+          <a href="#" class="btn-learn">LEARN MORE</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FEEDBACKS ===================== -->
+  <section class="section feedbacks-section" id="feedbacks">
+    <div class="section-header reveal-item">
+      <h2 class="section-title">Feedbacks</h2>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- Feedback 1 -->
+        <div class="feedback-card">
+          <div class="fb-avatar-wrap">
+            <img src="feedbacks/avatar-1.jpg" alt="Jam Smith" class="fb-avatar" onerror="this.src=''" />
+            <div class="fb-avatar-fallback" aria-hidden="true">JS</div>
+          </div>
+          <div class="fb-body">
+            <p class="fb-name">Jam Smith</p>
+            <p class="fb-role">Client</p>
+            <p class="fb-quote">"Thunomional thnk konnectore ad consectetor of cidoicams across us at smartter ournts and aise my heedback."</p>
+          </div>
+        </div>
+
+        <!-- Feedback 2 -->
+        <div class="feedback-card feedback-card--active">
+          <div class="fb-avatar-wrap">
+            <img src="feedbacks/avatar-2.jpg" alt="John Smith" class="fb-avatar" onerror="this.src=''" />
+            <div class="fb-avatar-fallback" aria-hidden="true">JS</div>
+          </div>
+          <div class="fb-body">
+            <p class="fb-name">John Smith</p>
+            <p class="fb-role">Client</p>
+            <p class="fb-quote">"Thunomional thot konnectore ad consectetor of citocams across us at smartter ournts and aise my heedback."</p>
+          </div>
+        </div>
+
+        <!-- Feedback 3 -->
+        <div class="feedback-card">
+          <div class="fb-avatar-wrap">
+            <img src="feedbacks/avatar-3.jpg" alt="Jam Smith" class="fb-avatar" onerror="this.src=''" />
+            <div class="fb-avatar-fallback" aria-hidden="true">JS</div>
+          </div>
+          <div class="fb-body">
+            <p class="fb-name">Jam Smith</p>
+            <p class="fb-role">Client</p>
+            <p class="fb-quote">"Thumomional that konnectore ad convector of ciddicams across us at smartter ournts and aise my heedback."</p>
+          </div>
+        </div>
+
+        <!-- Feedback 4 -->
+        <div class="feedback-card">
+          <div class="fb-avatar-wrap">
+            <img src="feedbacks/avatar-4.jpg" alt="John D." class="fb-avatar" onerror="this.src=''" />
+            <div class="fb-avatar-fallback" aria-hidden="true">JD</div>
+          </div>
+          <div class="fb-body">
+            <p class="fb-name">John D.</p>
+            <p class="fb-role">Client</p>
+            <p class="fb-quote">"Thumomional that konnectore ad convector of ciddicams across us at smartter ournts and heedback."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" id="carouselDots">
+      <button class="dot" data-index="0" aria-label="Feedback 1"></button>
+      <button class="dot dot--active" data-index="1" aria-label="Feedback 2"></button>
+      <button class="dot" data-index="2" aria-label="Feedback 3"></button>
+      <button class="dot" data-index="3" aria-label="Feedback 4"></button>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / FOOTER ===================== -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-panel reveal-item">
+      <div class="contact-left">
+        <div class="contact-fields">
+          <input type="email" class="contact-input" placeholder="Email" aria-label="Email address" />
+          <input type="tel" class="contact-input" placeholder="Phone" aria-label="Phone number" />
+        </div>
+        <textarea class="contact-textarea" placeholder="Message" rows="3" aria-label="Message"></textarea>
+        <div class="social-icons">
+          <button class="btn-send" type="button">Send
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:7px">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </div>
+        <div class="contact-actions">
+          <div class="social-icons">
+            <!-- Facebook -->
+            <a href="#" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <!-- X / Twitter -->
+            <a href="#" class="social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <!-- Telegram -->
+            <a href="#" class="social-btn" aria-label="Telegram" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-info">
+          <p class="contact-info-label">Email:</p>
+          <a href="mailto:ze8642881@gmail.com" class="contact-info-value">ze8642881@gmail.com</a>
+        </div>
+        <div class="contact-info">
+          <p class="contact-info-label">Socials:</p>
+          <p class="contact-info-value">@zyframes</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 ZYFrames. All rights reserved.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
