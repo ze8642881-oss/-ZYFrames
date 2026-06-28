@@ -266,3 +266,47 @@ if (ctaBtn) {
     }
   });
 }
+
+
+
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); // stop Google redirect
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  try {
+    await fetch(form.action, {
+      method: "POST",
+      body: data,
+      mode: "no-cors" // avoids CORS errors
+    });
+
+    // Define status element once
+    const status = document.getElementById("form-status");
+
+    // Show success message
+    status.innerText = "✅ Message sent successfully!";
+    status.style.color = "#0f0";
+
+    // Clear inputs
+    form.reset();
+
+    // Hide message after 3 seconds
+    setTimeout(() => {
+      status.innerText = "";
+    }, 3000);
+
+  } catch (error) {
+    const status = document.getElementById("form-status");
+    status.innerText = "❌ Something went wrong. Try again.";
+    status.style.color = "#f00";
+
+    // Hide error after 5 seconds
+    setTimeout(() => {
+      status.innerText = "";
+    }, 5000);
+  }
+});
+
+

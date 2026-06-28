@@ -1009,3 +1009,12 @@ a.contact-info-value:hover { color: var(--cyan); }
   flex-shrink: 0; 
   
 }
+
+#form-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0f0; /* neon green */
+}
+.btn-send:active {
+  transform: scale(0.95);
+}
