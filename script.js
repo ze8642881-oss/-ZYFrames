@@ -218,7 +218,7 @@ document.addEventListener('mouseleave', () => {
 let autoPlayTimer = setInterval(() => {
   const next = (currentIndex + 1) % totalCards;
   updateCarousel(next);
-}, 2000);
+}, 4000);
 
 // Pause autoplay on user interaction
 function pauseAutoplay() {
