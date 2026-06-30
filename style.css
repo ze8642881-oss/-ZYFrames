@@ -418,12 +418,13 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 /* Thumb Card */
 .thumb-card {
+  aspect-ratio: 3 / 2;
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--card-bg);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  aspect-ratio: 1 / 1;
+  
   cursor: pointer;
   transition: var(--transition);
 }
@@ -435,6 +436,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 
 .thumb-img-wrap {
+  
+  aspect-ratio: 3 / 2;
   position: absolute;
   inset: 0;
   overflow: hidden;
