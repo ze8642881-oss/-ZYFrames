@@ -1017,3 +1017,32 @@ a.contact-info-value:hover { color: var(--cyan); }
 .btn-send:active {
   transform: scale(0.95);
 }
+
+
+
+
+/* ─── CATEGORY FILTER BAR ─────────────────────────────── */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
+
+.filter-btn {
+  padding: 9px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 100px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+
+.filter-btn--active {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0, 245, 255, 0.08);
+  box-shadow: var(--cyan-glow-sm);
+}

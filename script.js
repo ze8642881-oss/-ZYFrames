@@ -310,3 +310,24 @@ document.getElementById("contactForm").addEventListener("submit", async function
 });
 
 
+/* ─── CATEGORY FILTER ───────────────────────────────────── */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const allThumbCards = document.querySelectorAll('.thumb-card');
+const catTextMap = { 'Project Details': 'details', 'Project Design': 'design', 'Project Develop': 'develop' };
+
+allThumbCards.forEach(card => {
+  const txt = card.querySelector('.thumb-detail').textContent.replace('▸', '').trim();
+  card.dataset.category = catTextMap[txt] || 'details';
+});
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('filter-btn--active'));
+    btn.classList.add('filter-btn--active');
+    const filter = btn.dataset.filter;
+    allThumbCards.forEach(card => {
+      card.classList.toggle('hidden', !(filter === 'all' || card.dataset.category === filter));
+    });
+  });
+});
+
